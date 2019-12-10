@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #aaaaaa;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+  background-color: #cccccc;
+  color: #fff;
+}
+
+.nav-link{
+  color: black;
+}
