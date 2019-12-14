@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bear',
-  // templateUrl: './bear.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './bear.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./bear.component.css']
 })
 export class BearComponent implements OnInit {
@@ -58,7 +58,7 @@ export class BearComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-bear');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -67,7 +67,7 @@ export class BearComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-bear');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

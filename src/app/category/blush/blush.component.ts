@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blush',
-  // templateUrl: './blush.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './blush.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./blush.component.css']
 })
 export class BlushComponent implements OnInit {
@@ -58,7 +58,7 @@ export class BlushComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-blush');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -67,7 +67,7 @@ export class BlushComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-blush');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

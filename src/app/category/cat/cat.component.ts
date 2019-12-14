@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cat',
-  // templateUrl: './cat.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './cat.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./cat.component.css']
 })
 export class CatComponent implements OnInit {
@@ -58,7 +58,7 @@ export class CatComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-cat');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -67,7 +67,7 @@ export class CatComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-cat');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

@@ -1,1 +1,9 @@
-<p>dance works!</p>
+<div>
+  <button class="btn btn-outline-secondary mr-2 mb-2" *ngFor="let face of this.faces; let i = index;"
+    (click)="click(i)">
+    {{face}}
+  </button>
+</div>
+<div id="alert-{{this.name}}" class="alert info mt-2">
+  Copied
+</div>

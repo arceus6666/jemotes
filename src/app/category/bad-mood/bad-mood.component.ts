@@ -3,8 +3,8 @@ import * as $ from 'jquery';
 
 @Component({
   selector: 'app-bad-mood',
-  // templateUrl: './bad-mood.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './bad-mood.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./bad-mood.component.css']
 })
 export class BadMoodComponent implements OnInit {
@@ -59,7 +59,7 @@ export class BadMoodComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-bad-mood');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -68,7 +68,7 @@ export class BadMoodComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-bad-mood');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

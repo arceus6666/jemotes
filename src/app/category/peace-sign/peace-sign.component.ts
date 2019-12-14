@@ -40,6 +40,8 @@ export class PeaceSignComponent implements OnInit {
     '',
   ];
 
+  public name = '';
+
   constructor() { }
 
   ngOnInit() {
@@ -57,7 +59,7 @@ export class PeaceSignComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById(`alert-${this.name}`);
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -66,7 +68,7 @@ export class PeaceSignComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById(`alert-${this.name}`);
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

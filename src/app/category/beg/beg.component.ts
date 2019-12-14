@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-beg',
-  // templateUrl: './beg.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './beg.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./beg.component.css']
 })
 export class BegComponent implements OnInit {
@@ -58,7 +58,7 @@ export class BegComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-beg');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -67,7 +67,7 @@ export class BegComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-beg');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

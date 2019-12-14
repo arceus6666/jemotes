@@ -8,36 +8,36 @@ import { Component, OnInit } from '@angular/core';
 export class CryComponent implements OnInit {
 
   public faces: Array<string> = [
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+    'أ‿أ',
+    '╥﹏╥',
+    '(;﹏;)',
+    '(ToT)',
+    '(┳Д┳)',
+    '(ಥ﹏ಥ)',
+    '（；へ：）',
+    '(T＿T)',
+    '（πーπ）',
+    '(Ｔ▽Ｔ)',
+    '(⋟﹏⋞)',
+    '（ｉДｉ）',
+    '(´Д⊂ヽ',
+    '(;Д;)',
+    '（>﹏<）',
+    '(TдT)',
+    '(つ﹏⊂)',
+    '༼☯﹏☯༽',
+    '(ノ﹏ヽ)',
+    '(ノAヽ)',
+    '(╥_╥)',
+    '(T⌓T)',
+    '(༎ຶ⌑༎ຶ)',
+    '(☍﹏⁰)｡',
+    '(ಥ_ʖಥ)',
+    '(つд⊂)',
+    '(≖͞_≖̥)',
+    '(இ﹏இ`｡)',
+    '༼ಢ_ಢ༽',
+    '༼ ༎ຶ ෴ ༎ຶ༽',
   ];
 
   constructor() { }
@@ -57,7 +57,7 @@ export class CryComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-cry');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -66,7 +66,7 @@ export class CryComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-cry');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

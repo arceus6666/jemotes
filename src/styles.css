@@ -56,3 +56,30 @@
 .closebtn:hover {
   color: black;
 }
+
+.scroll-box {
+  height: 90vh;
+  min-width: fit-content;
+  padding: 5%;
+  overflow-y: auto;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(80, 80, 80, 0.8);
+  box-shadow: inset 0 0 6px rgba(80, 80, 80, 0.8);
+  border-radius: 10px;
+}
+
+.scroll-box.dropdown-item:hover {
+  background-color: rgba(19, 19, 19, 0.8);
+}

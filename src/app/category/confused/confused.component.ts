@@ -9,38 +9,39 @@ import { Component, OnInit } from '@angular/core';
 export class ConfusedComponent implements OnInit {
 
   public faces: Array<string> = [
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+    'ఠ_ఠ',
+    '◔_◔',
+    '●.◉',
+    '(^^ゞ',
+    'ಠ_ರೃ',
+    '℃ↂ_ↂ',
+    'عربى',
+    'ɾ◉⊆◉ɹ',
+    '(。ヘ°)',
+    '(⊙_☉)',
+    '(＾＾；)',
+    '(☉_☉)',
+    '(♠_♦)',
+    '(ﾟｰﾟ;',
+    '(C_C)',
+    '(⊙_◎)',
+    '(゜-゜)',
+    '(◑○◑)',
+    '(・・；)',
+    '⁀⊙﹏☉⁀',
+    '(゜。゜)',
+    '(・・)',
+    '(´エ｀；)',
+    '(‘◇’)',
+    '（・∩・）',
+    '(・∧‐)ゞ',
+    '(⊙＿⊙)',
+    '(◎_◎;)',
+    '(●__●)',
+    '(ﾟヘﾟ)',
   ];
 
+  public name = 'confused';
   constructor() { }
 
   ngOnInit() {
@@ -58,7 +59,7 @@ export class ConfusedComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-confused');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -67,7 +68,7 @@ export class ConfusedComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-confused');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';

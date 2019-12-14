@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-angry',
-  // templateUrl: './angry.component.html',
-  templateUrl: '../main.html',
+  templateUrl: './angry.component.html',
+  // templateUrl: '../main.html',
   styleUrls: ['./angry.component.css']
 })
 export class AngryComponent implements OnInit {
@@ -59,7 +59,7 @@ export class AngryComponent implements OnInit {
   }
 
   open() {
-    const al = document.getElementById('alert');
+    const al = document.getElementById('alert-angry');
     al.style.opacity = '1';
     al.style.display = 'block';
     setTimeout(() => {
@@ -68,12 +68,10 @@ export class AngryComponent implements OnInit {
   }
 
   close() {
-    const div = document.getElementById('alert');
+    const div = document.getElementById('alert-angry');
     div.style.opacity = '0';
     setTimeout(() => {
       div.style.display = 'none';
     }, 600);
   }
-
-
 }
